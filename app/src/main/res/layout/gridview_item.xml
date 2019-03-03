@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        tools:src="@drawable/delhi1"
+        android:scaleType="centerCrop"
+        android:id="@+id/area_imageView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="New Delhi"
+        android:textColor="@android:color/darker_gray"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:textSize="16sp"
+        android:id="@+id/areaName_textView"/>
+
+
+
+</LinearLayout>

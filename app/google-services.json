@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "751959920080",
+    "firebase_url": "https://vacantlandfinal1.firebaseio.com",
+    "project_id": "vacantlandfinal1",
+    "storage_bucket": "vacantlandfinal1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:751959920080:android:93f9ccaac7ad80cd",
+        "android_client_info": {
+          "package_name": "com.example.odetocode.vacantlandfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "751959920080-a3oslvcj8perlqocgvar1irm51aa1prh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.odetocode.vacantlandfinal",
+            "certificate_hash": "dcb22b7e8069a1f438b28d95048b920e2d567128"
+          }
+        },
+        {
+          "client_id": "751959920080-egrkf3pfgpusuh1cnpeksf2t13a6hl0r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-Y96B1QyY2Y6yfm7JF5TGcZ_RZ-VvEMc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "751959920080-egrkf3pfgpusuh1cnpeksf2t13a6hl0r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
