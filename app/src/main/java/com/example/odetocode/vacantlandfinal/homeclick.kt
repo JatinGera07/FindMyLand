@@ -20,11 +20,7 @@ class homeclick : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_homeclick)
 
-    var idf:String=intent.getStringExtra("clickedid")
-
-
-
-
+    var idf:String=statedataclass.statedatavariable
 
 
         val retrofit = Retrofit.Builder()

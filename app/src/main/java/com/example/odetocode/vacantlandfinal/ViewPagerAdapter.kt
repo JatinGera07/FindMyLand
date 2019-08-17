@@ -21,11 +21,9 @@ class ViewPagerAdapter(private val models: List<listDatatype>, private val conte
     override fun isViewFromObject(view: View, `object`: Any): Boolean {
         return view == `object`
     }
-
     override fun instantiateItem(container: ViewGroup, position: Int): Any {
         layoutInflater = LayoutInflater.from(context)
         val view = layoutInflater!!.inflate(R.layout.viewpager_item_layout, container, false)
-
         val title: TextView
         val desc: TextView
         val constraints:ConstraintLayout
@@ -34,10 +32,11 @@ class ViewPagerAdapter(private val models: List<listDatatype>, private val conte
         constraints= view.findViewById(R.id.viewpagertop)
         title.setText(models[position].gettitle())
         desc.setText(models[position].getdescription())
-
         view.setOnClickListener(){
             var inte= Intent(context,homeclick::class.java)
-            inte.putExtra("clickedid",models[position].getid1())
+//            inte.putExtra("clickedid",models[position].getid1())
+            statedataclass.statedatavariable=models[position].toString()
+
             context!!.startActivity(inte)
 
 /*
@@ -47,7 +46,6 @@ class ViewPagerAdapter(private val models: List<listDatatype>, private val conte
         container.addView(view, 0)
         return view
     }
-
     override fun destroyItem(container: ViewGroup, position: Int, `object`: Any) {
         container.removeView(`object` as View)
     }

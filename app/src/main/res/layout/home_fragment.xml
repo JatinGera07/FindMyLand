@@ -13,6 +13,7 @@
         android:background="#f2f2f2"
         tools:context=".splash">
 
+
         <Button
             android:id="@+id/btn_get_location"
             android:layout_width="match_parent"

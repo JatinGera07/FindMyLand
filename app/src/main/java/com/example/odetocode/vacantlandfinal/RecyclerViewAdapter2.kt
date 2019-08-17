@@ -49,7 +49,9 @@ class RecyclerViewAdapter2(private val mContext: Context?, ImageResourceId: Arra
         holder.descView.text = mDesc[position]
         holder.constraintLayout.setOnClickListener(){
             var inte= Intent(mContext,homeclick::class.java)
-            inte.putExtra("clickedid",mid[position])
+            //inte.putExtra("clickedid",mid[position])
+            statedataclass.statedatavariable=mid[position]
+
             mContext!!.startActivity(inte)
 
         }

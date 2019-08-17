@@ -1,5 +1,4 @@
 package com.example.odetocode.vacantlandfinal
-
 import android.content.Context
 import android.content.Intent
 import android.support.constraint.ConstraintLayout
@@ -17,9 +16,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 
 import java.util.ArrayList
-
 class RecyclerViewAdapter3(private val mContext: Context?, ImageResourceId: ArrayList<String>, location: ArrayList<String>, Desc: ArrayList<String>, id1:ArrayList<String>) : RecyclerView.Adapter<RecyclerViewAdapter3.ViewHolder>() {
-
     //vars
     private var mImageResourceId = ArrayList<String>()
     private var mLocation = ArrayList<String>()
@@ -40,15 +37,15 @@ class RecyclerViewAdapter3(private val mContext: Context?, ImageResourceId: Arra
         val view = LayoutInflater.from(parent.context).inflate(R.layout.recyclerview_item_layout3, parent, false)
         return ViewHolder(view)
     }
-
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         Glide.with(mContext!!).load(mImageResourceId.get(position)).apply(option).into(holder.imageView)
-
         holder.locationView.text = mLocation[position]
         holder.descView.text = mDesc[position]
         holder.constraintLayout.setOnClickListener(){
             var inte= Intent(mContext,homeclick::class.java)
-            inte.putExtra("clickedid",mid[position])
+           /* inte.putExtra("clickedid",mid[position])
+           */
+            statedataclass.statedatavariable=mid[position]
             mContext!!.startActivity(inte)
 
         }
@@ -73,7 +70,6 @@ class RecyclerViewAdapter3(private val mContext: Context?, ImageResourceId: Arra
     }
 
     companion object {
-
         private val TAG = "RecyclerViewAdapter"
     }
 }

@@ -38,7 +38,10 @@ class ViewPagerAdapter2(private val models: List<listDatatype>, private val cont
 
         view.setOnClickListener(){
             var inte= Intent(context,homeclick::class.java)
-            inte.putExtra("clickedid",models[position].getid1())
+            /*inte.putExtra("clickedid",models[position].getid1())
+            */
+            statedataclass.statedatavariable=models[position].toString()
+
             context!!.startActivity(inte)
 
 /*
