@@ -1,0 +1,2 @@
+# FindMyLand
+•	I along with my team developed a mobile application that displays the vacant lands provided by MSME for industrial use. Key highlights of the application are User authentication, Search by state, filters on Cost and Area, user's list of favourite lands, nearby resources, recommendation system to suggest industries that are favourable/unfavourable to setup at a particular location depending upon nearby resources.
